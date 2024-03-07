@@ -4,12 +4,6 @@ local titlefunc = {}
 local UIConfig = {
   Bind = Enum.KeyCode.RightControl
 }
-    
-    for _, Interface in ipairs(game.CoreGui:GetChildren()) do
-   if Interface.Name == "UICloud" or Interface.Name == "TurnCloud" then
-      Interface:Destroy()
-   end
-end
 
 _G.Color = Color3.fromRGB(0, 0, 255)
 
@@ -105,11 +99,10 @@ game:GetService("UserInputService").InputChanged:Connect(
   end
 )
 end
-
-for _, Interface in ipairs(game.CoreGui:GetChildren()) do
-  if Interface.Name == "UICloud" or Interface.Name == "TurnCloud" then
-     Interface:Destroy()
-  end
+    for _, Interface in ipairs(game.CoreGui:GetChildren()) do
+   if Interface.Name == "UICloud" or Interface.Name == "TurnCloud" then
+      Interface:Destroy()
+   end
 end
 local ThunderScreen = Instance.new("ScreenGui")
 local ThunderToggleUI = Instance.new("TextButton")
