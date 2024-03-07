@@ -1864,7 +1864,7 @@ Label.BackgroundTransparency = 1.000
 Label.Size = UDim2.new(0, 200, 0, 20)
 Label.Font = Enum.Font.SourceSansBold
 Label.TextColor3 = Color3.fromRGB(225, 225, 225)
-Label.TextSize = 9.000
+Label.TextSize = 13.000
 Label.Text = text
 Label.TextXAlignment = Enum.TextXAlignment.Left
 
