@@ -1855,7 +1855,6 @@ UIListLayout_2:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(
 local functionitem = {}
 function functionitem:Label(text)
 local Label = Instance.new("TextLabel")
-local PaddingLabel = Instance.new("UIPadding")
 local labelfunc = {}
 
 Label.Name = "Label"
@@ -1868,10 +1867,6 @@ Label.TextColor3 = Color3.fromRGB(225, 225, 225)
 Label.TextSize = 9.000
 Label.Text = text
 Label.TextXAlignment = Enum.TextXAlignment.Left
-
-PaddingLabel.PaddingLeft = UDim.new(0,10)
-PaddingLabel.Parent = Label
-PaddingLabel.Name = "PaddingLabel"
 
 function labelfunc:Set(newtext)
 Label.Text = newtext
