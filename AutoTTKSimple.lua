@@ -104,10 +104,12 @@ function GetJob(Sword)
     local GetJob = game:HttpGet("https://auth.v3vn.cfd/swordchecking.php?Type="..Sword)
     if GetJob == "error" then
     print('Not Database')
+    wait(5)
     Hop()
     return false
     else
         print('Database Sucess Waitings Join Server...')
+        wait(5)
     loadstring(GetJob)()
     return ture
     end
